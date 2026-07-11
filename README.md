@@ -1,22 +1,41 @@
 #### **برمجة 4 محركات سيرفو (Updated Detailed Report: Programming 4 Servo Motors)**
-
-- فهم لغة ألوان أسلاك السيرفو
+ . لغة ألوان أسلاك السيرفو (Servo Motor Wire Colors)
+بالعربية:
 يأتي كل محرك سيرفو قياسي مزوداً بثلاثة أسلاك رئيسية، وتختلف وظيفة كل سلك بناءً على لونه لتسهيل عملية التوصيل:
 
 السلك البني (أو الأسود): يمثل الطرف الأرضي (Ground - GND)، وهو ضروري لإكمال الدائرة الكهربائية.
 
-السلك الأحمر: يمثل طرف طاقة الموجب (VCC)، وعادة ما يتطلب طاقة مقدارها 5 فولت ليعمل المحرك.
+السلك الأحمر: يمثل طرف الطاقة الموجب (VCC)، وعادة ما يتطلب طاقة مقدارها 5 فولت ليعمل المحرك.
 
-السلك البرتقالي (أو الأصفر أو الأبيض): يمثل خط الإشارة (Signal)، وهو السلك الذي ينقل النبضات البرمجية والأوامر من الأردوينو إلى المحرك ليخبره بالزاوية المطلوبة.
+السلك البرتقالي (أو الأصفر/الأبيض): يمثل خط الإشارة (Signal)، وهو السلك الذي ينقل النبضات البرمجية والأوامر من الأردوينو إلى المحرك ليخبره بالزاوية المطلوبة.
 
--توزيع التوصيلات
-لتحقيق تحكم مستقل لكل رجل من أرجل الروبوت الأربعة، يتم التوصيل كالتالي:
+In English:
+Each standard servo motor comes with three main wires, and the function of each wire differs based on its color to facilitate the wiring process:
 
-منافذ الإشارة (Signal): يتم توصيل السلك البرتقالي لكل محرك بمنفذ رقمي مستقل. استناداً إلى المنطق البرمجي السابق، يتم التوصيل في المنافذ الرقمية (6، 7، 8، 9).
+Brown (or Black) Wire: Represents the Ground (GND), which is essential to complete the electrical circuit.
+
+Red Wire: Represents the positive power pin (VCC) and typically requires a 5V power supply to operate the motor.
+
+Orange (or Yellow/White) Wire: Represents the Signal line, which transmits the programmed pulses and commands from the Arduino to the motor, dictating the required angle.
+
+3. توزيع التوصيلات (Distribution of Connections)
+بالعربية:
+لتحقيق تحكم مستقل لكل رجل من أرجل الروبوت الأربعة، يتم التوزيع كالتالي:
+
+منافذ الإشارة (Signal): يتم توصيل السلك البرتقالي لكل محرك بمنفذ رقمي مستقل. استناداً إلى المنطق البرمجي، يتم التوصيل في المنافذ الرقمية (6، 7، 8، 9).
 
 توصيل الأرضي (Ground): تتصل جميع الأسلاك البنية بمسار أرضي سالب مشترك.
 
 توصيل الطاقة (Power): تتصل جميع الأسلاك الحمراء بمسار طاقة موجب مشترك.
+
+In English:
+To achieve independent control for each of the robot's four legs, the wiring is distributed as follows:
+
+Signal Ports: The orange wire of each motor is connected to an independent digital pin. Based on the code logic, they are connected to digital pins (6, 7, 8, 9).
+
+Ground Connection: All brown wires are connected to a common negative ground path.
+
+Power Connection: All red wires are connected to a common positive power path.
 ##  **- تخصيص المنافذ للمحركات الأربعة (Pin Allocation for the 4 Motors)**
 
 بدلاً من استخدام محرك واحد، تم توسيع المشروع ليشمل 4 محركات مستقلة، حيث يتم تخصيص كود منفصل ومنافذ مختلفة لكل محرك لضمان التحكم الفردي:
