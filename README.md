@@ -100,5 +100,5 @@ Finally, the motors are held at the 90-degree angle within the else condition.
 The code replicates this exact logic for the second, third, and fourth motors using the servo2, servo3, and servo4 variables respectively.
 
 ![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/e93df29b373bd11c4c077d4ee25da6d6cee2d24f/Screenshot%202026-07-11%20183820.png)
-![img alt]()
+![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/2500456239218d15ac74360058ce38dd18c1d58e/Screenshot%202026-07-11%20183830.png)
 ![img alt]()
