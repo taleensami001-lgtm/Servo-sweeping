@@ -82,7 +82,7 @@ The code replicates this exact logic for the second, third, and fourth motors us
 ![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/afd5b3e4c3b4d6bacde3045477b3f646b5ac2382/Screenshot%202026-07-11%20183842.png)
 
 
-## ** and here is the code **
+## **and here is the code**
 
 
 #include <Servo.h>
