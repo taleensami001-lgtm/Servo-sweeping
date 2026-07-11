@@ -82,29 +82,47 @@ The code replicates this exact logic for the second, third, and fourth motors us
 ![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/afd5b3e4c3b4d6bacde3045477b3f646b5ac2382/Screenshot%202026-07-11%20183842.png)
 
 
-** and here is the code **
+## ** and here is the code **
+
+
 #include <Servo.h>
 
 Servo servo2;
+
 bool isSweeping = true; 
 
 void setup() {
+
   servo2.attach(8);
+  
 }
 
 void loop() {
+
   if (isSweeping == true) {
+  
     for (int pos = 0; pos <= 180; pos++) {
+    
       servo2.write(pos);
+      
       delay(5); 
+      
     }
+    
     for (int pos = 180; pos >= 0; pos--) {
+    
       servo2.write(pos);
+      
       delay(5);
+      
     }
+    
     isSweeping = false; 
+    
   } else {
+  
     servo2.write(90);
    
   }
+  
 }
