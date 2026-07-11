@@ -24,7 +24,7 @@ Orange (or Yellow/White) Wire: Represents the Signal line, which transmits the p
 
 To achieve independent control for each of the robot's four legs, the wiring is distributed as follows:
 
-Signal Ports: The orange wire of each motor is connected to an independent digital pin. Based on the code logic, they are connected to digital pins (6, 7, 8, 9).
+Ground Connection: All brown wires are connected to a common negative ground path.
 
 ![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/b2b9721fc5487df7552310389057459f1865f58b/Screenshot%202026-07-11%20143528.png)
 
@@ -32,6 +32,7 @@ power Connection: All red wires are connected to a common positive power path.
 
 ![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/18049bf51908b6e7102063f41813b623ab9c1dbf/Screenshot%202026-07-11%20143557.png)
 
+Signal Ports: The orange wire of each motor is connected to an independent digital pin. Based on the code logic, they are connected to digital pins (6, 7, 8, 9).
 Ground Connection: All brown wires are connected to a common negative ground path.
 
 ![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/69728d65ed4f01c22d0f5e2dda7f705736ee4749/Screenshot%202026-07-11%20143639.png)
