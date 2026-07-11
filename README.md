@@ -69,12 +69,29 @@ After the cycle ends, the variable's state is changed to isSweeping = false to s
 ![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/8e0fec0c8b61b7f20a7b06cba9937bd5a0fae80d/Screenshot%202026-07-11%20182927.png)
 ![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/12ad0f79dd2cd0f058aa01498711e0d28d69ef32/Screenshot%202026-07-11%20182947.png)
 
+  
+  
+Finally, the motors are held at the 90-degree angle within the else condition.
+
+![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/d75902c0faf4c888221cdc92d10242321f2d68d4/Screenshot%202026-07-11%20183938.png)
+
+The code replicates this exact logic for the second, third, and fourth motors using the servo2, servo3, and servo4 variables respectively.
+
+![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/e93df29b373bd11c4c077d4ee25da6d6cee2d24f/Screenshot%202026-07-11%20183820.png)
+![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/2500456239218d15ac74360058ce38dd18c1d58e/Screenshot%202026-07-11%20183830.png)
+![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/afd5b3e4c3b4d6bacde3045477b3f646b5ac2382/Screenshot%202026-07-11%20183842.png)
+
+
+** and here is the code **
 #include <Servo.h>
+
 Servo servo2;
 bool isSweeping = true; 
+
 void setup() {
   servo2.attach(8);
 }
+
 void loop() {
   if (isSweeping == true) {
     for (int pos = 0; pos <= 180; pos++) {
@@ -91,14 +108,3 @@ void loop() {
    
   }
 }
-  
-  
-Finally, the motors are held at the 90-degree angle within the else condition.
-
-![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/d75902c0faf4c888221cdc92d10242321f2d68d4/Screenshot%202026-07-11%20183938.png)
-
-The code replicates this exact logic for the second, third, and fourth motors using the servo2, servo3, and servo4 variables respectively.
-
-![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/e93df29b373bd11c4c077d4ee25da6d6cee2d24f/Screenshot%202026-07-11%20183820.png)
-![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/2500456239218d15ac74360058ce38dd18c1d58e/Screenshot%202026-07-11%20183830.png)
-![img alt]()
