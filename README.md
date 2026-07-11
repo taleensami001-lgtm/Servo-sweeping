@@ -1,4 +1,4 @@
-#### **برمجة 4 محركات سيرفو (Updated Detailed Report: Programming 4 Servo Motors)**
+#### **برمجة 4 محركات سيرفو (Programming 4 Servo Motors)**
 
 
 ## **- لغة ألوان أسلاك السيرفو (Servo Motor Wire Colors)**
