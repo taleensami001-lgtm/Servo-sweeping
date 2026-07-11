@@ -24,9 +24,16 @@ Orange (or Yellow/White) Wire: Represents the Signal line, which transmits the p
 
 To achieve independent control for each of the robot's four legs, the wiring is distributed as follows:
 Signal Ports: The orange wire of each motor is connected to an independent digital pin. Based on the code logic, they are connected to digital pins (6, 7, 8, 9).
+
+![img alt]()
+
 Ground Connection: All brown wires are connected to a common negative ground path.
+
+![img alt]()
+
 Power Connection: All red wires are connected to a common positive power path.
 
+![img alt]()
 
 ##  **- تخصيص المنافذ للمحركات الأربعة (Pin Allocation for the 4 Motors)**
 
@@ -40,6 +47,8 @@ Instead of using a single motor, the project has been expanded to include 4 inde
 The second motor (servo2) is attached to digital pin 8.
 The third motor (servo3) is attached to digital pin 7.
 The fourth motor (servo4) is attached to digital pin 6.
+
+![img alt]()
 
  ## **- المنطق البرمجي وحساب الوقت (Code Logic and Time Calculation)**
 
@@ -55,5 +64,16 @@ The code relies on a boolean variable isSweeping = true to allow the sweep motio
 The motion consists of increasing from 0 to 180 degrees, then decreasing from 180 to 0 degrees with a 5 ms delay for each step.
 The total time is calculated to be approximately two seconds by multiplying 360 steps by 5 ms, resulting in 1800 ms (1.8 seconds), and by adding the actual motor response time, we reach exactly the required two seconds.
 After the cycle ends, the variable's state is changed to isSweeping = false to stop the sweep forever.
+
+![img alt]()
+![img alt]()
+
 Finally, the motors are held at the 90-degree angle within the else condition.
+
+![img alt]()
+
 The code replicates this exact logic for the second, third, and fourth motors using the servo2, servo3, and servo4 variables respectively.
+
+![img alt]()
+![img alt]()
+![img alt]()
