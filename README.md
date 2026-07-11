@@ -66,7 +66,7 @@ The motion consists of increasing from 0 to 180 degrees, then decreasing from 18
 The total time is calculated to be approximately two seconds by multiplying 360 steps by 5 ms, resulting in 1800 ms (1.8 seconds), and by adding the actual motor response time, we reach exactly the required two seconds.
 After the cycle ends, the variable's state is changed to isSweeping = false to stop the sweep forever.
 
-![img alt]()
+![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/8e0fec0c8b61b7f20a7b06cba9937bd5a0fae80d/Screenshot%202026-07-11%20182927.png)
 ![img alt]()
 
 Finally, the motors are held at the 90-degree angle within the else condition.
