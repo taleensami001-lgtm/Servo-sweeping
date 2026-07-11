@@ -95,7 +95,7 @@ void loop() {
   
 Finally, the motors are held at the 90-degree angle within the else condition.
 
-![img alt]()
+![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/d75902c0faf4c888221cdc92d10242321f2d68d4/Screenshot%202026-07-11%20183938.png)
 
 The code replicates this exact logic for the second, third, and fourth motors using the servo2, servo3, and servo4 variables respectively.
 
