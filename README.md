@@ -49,7 +49,7 @@ The second motor (servo2) is attached to digital pin 8.
 The third motor (servo3) is attached to digital pin 7.
 The fourth motor (servo4) is attached to digital pin 6.
 
-![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/42cf5ecbdb89a7c6c92a871e62e97878a1b22069/Screenshot%202026-07-11%20182820.png)
+![[img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/42cf5ecbdb89a7c6c92a871e62e97878a1b22069/Screenshot%202026-07-11%20182820.png](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/e625d9ed179bab04dbb5b49b11e4ee53ef845de8/Screenshot%202026-07-12%20150319.png))
 
  ## **- المنطق البرمجي وحساب الوقت (Code Logic and Time Calculation)**
 
