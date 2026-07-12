@@ -67,8 +67,7 @@ The total time is calculated to be approximately two seconds by multiplying 360 
 After the cycle ends, the variable's state is changed to isSweeping = false to stop the sweep forever.
 
 ![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/2a048cb86c7536be1a847417f66b93e282e55fe5/Screenshot%202026-07-12%20150144.png)
-![img alt]([https://github.com/taleensami001-lgtm/Servo-sweeping/blob/12ad0f79dd2cd0f058aa01498711e0d28d69ef32/Screenshot%202026-07-11%20182947.png](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/1b69f6d57fef0b934e122391532aca04c026748d/Screenshot%202026-07-12%20150206.png))
-
+![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/1b69f6d57fef0b934e122391532aca04c026748d/Screenshot%202026-07-12%20150206.png)
   
   
 Finally, the motors are held at the 90-degree angle within the else condition.
