@@ -72,56 +72,137 @@ After the cycle ends, the variable's state is changed to isSweeping = false to s
   
 Finally, the motors are held at the 90-degree angle within the else condition.
 
-![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/d75902c0faf4c888221cdc92d10242321f2d68d4/Screenshot%202026-07-11%20183938.png)
-
-The code replicates this exact logic for the second, third, and fourth motors using the servo2, servo3, and servo4 variables respectively.
-
-![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/e93df29b373bd11c4c077d4ee25da6d6cee2d24f/Screenshot%202026-07-11%20183820.png)
-![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/2500456239218d15ac74360058ce38dd18c1d58e/Screenshot%202026-07-11%20183830.png)
-![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/afd5b3e4c3b4d6bacde3045477b3f646b5ac2382/Screenshot%202026-07-11%20183842.png)
-
+![img alt](https://github.com/taleensami001-lgtm/Servo-sweeping/blob/5977851e7f107cf9269b56ff91c665585ae27b00/Screenshot%202026-07-12%20150128.png)
 
 ## **and here is the code**
 
-
 #include <Servo.h>
+
+// Define the servo motor
+
+// تعريف محرك السيرفو
+
+Servo servo1;
 
 Servo servo2;
 
+Servo servo3;
+
+Servo servo4;
+
+
+
+// Variable to control the sweep motion to stop it after two seconds
+//  متغير للتحكم في تشغيل حركة المسح ليتم إيقافها بعد ثانيتين
 bool isSweeping = true; 
+
+
 
 void setup() {
 
+  
+  // To attach the motor to the Arduino pin
+  // لربط المحرك بمنفذ الاردوينو
+  
+  servo1.attach(9);
+  
   servo2.attach(8);
+  
+  servo3.attach(7);
+  
+  servo4.attach(6);
   
 }
 
+
 void loop() {
 
+
+ 
+  // Check if the sweep motion is running
+  // التحقق مما إذا كانت حركة المسح تعمل
+  
+  
   if (isSweeping == true) {
   
-    for (int pos = 0; pos <= 180; pos++) {
     
+    // increase from 0 to 180 degrees for all motors together
+    
+    // الارتفاع من 0 إلى 180 درجة لجميع المحركات معاً
+    
+    for (int pos = 0; pos <= 180; pos++) {
+      
+      servo1.write(pos);
+      
       servo2.write(pos);
       
+      servo3.write(pos);
+      
+      servo4.write(pos);
+      
+      
+     
       delay(5); 
       
     }
     
+    
+    // decrease from 180 to 0 degrees for all motors together
+    // النزول من 180 إلى 0 درجة لجميع المحركات معاً
+   
     for (int pos = 180; pos >= 0; pos--) {
     
+      
+      servo1.write(pos);
+      
       servo2.write(pos);
+      
+      servo3.write(pos);
+      
+      servo4.write(pos);
+      
+      
       
       delay(5);
       
     }
     
+    /* How did we calculate the two seconds?
+We have 360 steps in the loop (180 up + 180 down).
+360 steps * 5 ms delay = 1800 ms (1.8 seconds).
+By adding the slight time the motor naturally takes to move,
+the cycle will take approximately two seconds exactly as required in the task.
+*/
+
+    /* كيف حسبنا الثانيتين؟ 
+     لدينا 360 خطوة في حلقة التكرار (180 صعود + 180 نزول).
+     360 خطوة × 5 مللي ثانية تأخير = 1800 مللي ثانية (1.8 ثانية).
+     بإضافة الوقت الضئيل الذي يستغرقه المحرك فعلياً للحركة، 
+     ستستغرق الدورة حوالي ثانيتين تماماً كما هو مطلوب في المهمة.
+    */
+
+    
+    
+    // Stop the sweep motion forever by changing the variable's state
+    // إيقاف حركة المسح للأبد بتغيير حالة المتغير
+    
     isSweeping = false; 
+    
     
   } else {
   
+   // After the two seconds end, hold all motors at 90 degrees
+   
+   //  بعد انتهاء الثانيتين، تثبيت جميع المحركات عند الزاوية 90
+    
+    servo1.write(90);
+    
     servo2.write(90);
+    
+    servo3.write(90);
+    
+    servo4.write(90);
+    
    
   }
-  
 }
